@@ -1,0 +1,14 @@
+[
+  {
+    "ticketId": "ENG-REQ-1042",
+    "name": "Dr. Ramesh Nair",
+    "email": "ramesh@iisc.ac.in",
+    "phone": "+91 94481 99201",
+    "scope": "High Frequency RF (6GHz)",
+    "edaTool": "KiCad 8.0",
+    "notes": "Need impedance matching verification on 50-ohm coplanar waveguide with ground plane on Rogers 4350B.",
+    "status": "ASSIGNED_TO_CAM_LEAD",
+    "createdAt": "2026-11-04T08:15:00.000Z"
+  }
+]
+

@@ -1,0 +1,115 @@
+[
+  {
+    "orderId": "PCB-84920",
+    "customer": {
+      "fullName": "Arjun Sharma",
+      "email": "arjun@hardwarelab.in",
+      "phone": "+91 98450 12345",
+      "company": "NextGen Robotics Lab"
+    },
+    "shippingAddress": {
+      "address": "Floor 3, Tech Hub Tower, Outer Ring Road",
+      "city": "Bengaluru",
+      "state": "Karnataka",
+      "pincode": "560103"
+    },
+    "taxDetails": {
+      "gstin": "29AABCU9603R1ZM",
+      "companyName": "NextGen Robotics Lab Pvt Ltd",
+      "taxCreditEligible": true
+    },
+    "payment": {
+      "method": "upi",
+      "status": "PAID",
+      "transactionId": "TXN-UPI-9923847"
+    },
+    "items": [
+      {
+        "id": "item-1",
+        "title": "Double-Sided FR-4 (Cobalt Blue)",
+        "specs": "2-Layer • 100×100mm • ENIG Gold • 1oz • 5 Pcs",
+        "quantity": 5,
+        "price": 299,
+        "solderMask": "blue",
+        "surfaceFinish": "enig"
+      }
+    ],
+    "pricing": {
+      "subtotalINR": 299,
+      "gstINR": 54,
+      "shippingINR": 0,
+      "totalINR": 353,
+      "currency": "INR"
+    },
+    "status": "IN_PRODUCTION",
+    "currentStation": "Station 05 • LPI Coating Chamber 01",
+    "estimatedDispatch": "Tomorrow 06:00 PM",
+    "createdAt": "2026-11-04T05:00:00.000Z",
+    "cleanroomTelemetry": {
+      "temperatureCelsius": 21.4,
+      "relativeHumidity": 44,
+      "isoCleanroomClass": "ISO 7 (Class 10,000)",
+      "laserWavelengthNm": 405,
+      "lotBatchId": "LOT-BLR-2026-X99"
+    },
+    "milestones": [
+      {
+        "id": 1,
+        "title": "CAM & Engineering DFM Review",
+        "station": "Station 01 • Cleanroom CAM Office",
+        "time": "Today 10:30 AM",
+        "status": "completed",
+        "details": "Netlist DRC verified, copper clearances checked, panel layout serialized."
+      },
+      {
+        "id": 2,
+        "title": "Laser Direct Imaging & Inner Layer Etching",
+        "station": "Station 02 • Photolithography Bay 02",
+        "time": "Today 01:15 PM",
+        "status": "completed",
+        "details": "Photoresist exposed via 405nm ultraviolet laser; chemical micro-etch completed."
+      },
+      {
+        "id": 3,
+        "title": "Lamination & High-Speed CNC Drilling",
+        "station": "Station 03 • Spindle CNC Array 04",
+        "time": "Today 04:45 PM",
+        "status": "completed",
+        "details": "Multilayer prepreg pressure cured; 0.3mm vias drilled at 180,000 RPM."
+      },
+      {
+        "id": 4,
+        "title": "Chemical Copper Bath & ENIG Gold Plating",
+        "station": "Station 04 • Electroplating Line B",
+        "time": "Today 08:30 PM",
+        "status": "completed",
+        "details": "Electroless nickel 120µ\" and immersion gold 2µ\" deposited on SMD pads."
+      },
+      {
+        "id": 5,
+        "title": "High-Res LPI Solder Mask & UV Curing",
+        "station": "Station 05 • LPI Coating Chamber 01",
+        "time": "In Progress (Active Now)",
+        "status": "current",
+        "details": "Precision Cobalt Blue solder resist applied and thermal baked for chemical durability."
+      },
+      {
+        "id": 6,
+        "title": "Flying Probe E-Test & Optical AOI",
+        "station": "Station 06 • QA Diagnostic Bay",
+        "time": "Scheduled: Tomorrow 09:00 AM",
+        "status": "upcoming",
+        "details": "100% netlist electrical continuity test and double-sided vision inspection."
+      },
+      {
+        "id": 7,
+        "title": "ESD Vacuum Armor Packaging & Air Logistics",
+        "station": "Station 07 • Dispatch Dock 03",
+        "time": "Scheduled: Tomorrow 06:00 PM",
+        "status": "upcoming",
+        "details": "Vacuum sealed with silica gel desiccant; handed over to express courier."
+      }
+    ]
+  }
+]
+

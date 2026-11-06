@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-high": "#e2e7ff", "on-secondary-container": "#00714e", "on-surface": "#131b2e", "on-secondary": "#ffffff", "on-tertiary-fixed-variant": "#004c6e", "on-error": "#ffffff", "secondary-fixed": "#85f8c4", "surface-container-low": "#f2f3ff", "on-primary-container": "#eeefff", "surface-bright": "#faf8ff", "on-secondary-fixed": "#002114", "background": "#faf8ff", "on-tertiary": "#ffffff", "surface-tint": "#0053db", "surface-dim": "#d2d9f4", "surface-container-lowest": "#ffffff", "on-tertiary-fixed": "#001e2f", "outline": "#737686", "on-primary-fixed-variant": "#003ea8", "secondary": "#006c4a", "primary-container": "#2563eb", "on-tertiary-container": "#e4f2ff", "surface": "#faf8ff", "surface-container": "#eaedff", "on-primary": "#ffffff", "primary": "#004ac6", "tertiary-container": "#0074a6", "surface-container-highest": "#dae2fd", "inverse-primary": "#b4c5ff", "secondary-fixed-dim": "#68dba9", "tertiary-fixed-dim": "#89ceff", "on-background": "#131b2e", "on-error-container": "#93000a", "on-primary-fixed": "#00174b", "error": "#ba1a1a", "primary-fixed-dim": "#b4c5ff", "outline-variant": "#c3c6d7", "tertiary-fixed": "#c9e6ff", "primary-fixed": "#dbe1ff", "secondary-container": "#82f5c1", "surface-variant": "#dae2fd", "inverse-on-surface": "#eef0ff", "inverse-surface": "#283044", "tertiary": "#005a82", "on-secondary-fixed-variant": "#005137", "error-container": "#ffdad6", "on-surface-variant": "#434655" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "margin-mobile": "1rem", "space-sm": "0.5rem", "gutter-mobile": "1rem", "margin": "2rem", "gutter": "1.5rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "space-lg": "1.5rem" }, "fontFamily": { "headline-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["JetBrains Mono"], "label-lg": ["JetBrains Mono"], "headline-xl-mobile": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-xl": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-sm": ["JetBrains Mono"], "headline-sm": ["Plus Jakarta Sans"] }, "fontSize": { "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-xl-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }] } } } }</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-inverse-surface text-inverse-on-surface px-margin py-1.5 flex items-center justify-between text-center"><div class="w-full flex items-center justify-center gap-space-sm"><span class="font-label-sm text-label-sm tracking-wider uppercase bg-primary-container text-on-primary-container px-2 py-0.5 rounded">SPEED RUN</span><span class="font-body-sm text-body-sm text-inverse-on-surface font-medium">⚡ Superfast 24h PCB Prototyping &amp; Gerber Instant DFM Analysis | Free Shipping across India on orders over ₹999</span></div><div class="hidden lg:flex items-center gap-space-xs font-label-sm text-label-sm text-surface-variant"><span class="material-symbols-outlined text-[14px]">verified</span><span>IPC Class 2/3</span></div></div><div class="h-16 w-full max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg shrink-0"><a class="flex items-center gap-space-sm group" data-path="home" href="#"><img alt="PCB Hub Vector Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VUzIXGnTFtqSEYK5wppQaIhtlYjQ7DnpD6pGHg6FZej959nctxXwHWZUOQ8N4NVqr3Pcaus2rHcXbYjI2S-5JM_xTT7IoN3MolrUDI1m36-6e9gmCthEwANMaQc42cBWGBsQwh7zbsx3JOrcDNWc3KMnf5hY0h17VjA-2UxO4NKqHl8mqREMEFZ2xpW1fl-SjOzVbg_Z5_o7lPYiWMlFXBFBsvge5-i4x4C2e7oD19UjlSrzMrN_pRkAc"/><div class="flex flex-col leading-none"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">PCB Hub</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest text-[9px]">FAB &amp; ASSEMBLY</span></div></a></div><nav class="hidden xl:flex items-center gap-space-md" data-active-classes="text-primary font-semibold border-b-2 border-primary"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface py-2 transition-colors" data-path="home" href="#">Home</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface py-2 transition-colors" data-path="explore-pcbs" href="#">Explore PCBs</a><a aria-current="page" class="py-2 transition-colors text-primary font-semibold border-b-2 border-primary" data-path="custom-pcb" href="#">Custom PCB</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface py-2 transition-colors" data-path="how-it-works" href="#">How It Works</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface py-2 transition-colors" data-path="pricing" href="#">Pricing</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface py-2 transition-colors" data-path="track-order" href="#">Track Order</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface py-2 transition-colors" data-path="design-help" href="#">Design Help</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface py-2 transition-colors" data-path="admin-portal" href="#">Admin Portal</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="hidden md:flex items-center relative"><span class="material-symbols-outlined absolute left-2.5 text-on-surface-variant text-[18px]">search</span><input class="w-52 lg:w-64 pl-8 pr-3 py-1.5 bg-surface-container-low text-on-surface rounded-lg font-label-md text-label-md border border-outline-variant focus:outline-none focus:border-primary placeholder:text-on-surface-variant transition-all" placeholder="Search specs, FR-4, parts..." type="text"/></div><div class="hidden sm:flex items-center bg-surface-container px-2 py-1 rounded-lg gap-space-xs"><span class="font-label-sm text-label-sm font-semibold text-on-surface">₹ INR</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span></div><button aria-label="View Cart" class="relative p-2 rounded-lg text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-1 right-1 bg-secondary text-on-secondary font-label-sm text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">1</span></button><div class="flex items-center gap-space-xs pl-space-xs pr-space-sm py-1 rounded-full bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8NqsHu5yDPQOPBp_a8esTgY-mq3_z-U64wcR4WnxHcg1qVx-HHb3-wm0Wzmel1AaMSWEyIE6SJ5Y1Jq64RJ8xHDBwpw68a08rLIrM4JZ0q5k7Qfol5l48cnzMU_0glbJNCzEjRBRwkQVx87beNYqZMrcR5iEDwdPNfOAXPcy4pkM6MLXk5mLRBml4FiUDPQJL-1SPDK9z1dClSLmLRiplTT-9sUlcljyxk2mmhXXr7k8YzDRMNglZ"/><div class="hidden 2xl:flex flex-col text-left"><span class="font-body-sm text-body-sm font-semibold text-on-surface leading-tight">Arjun Sharma</span><span class="font-label-sm text-label-sm text-on-surface-variant text-[10px] leading-tight">Hardware Lead</span></div><span class="material-symbols-outlined text-on-surface-variant text-[16px]">expand_more</span></div><a class="hidden lg:inline-flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary text-on-primary font-headline-sm text-headline-sm font-semibold shadow-[0_2px_12px_rgba(0,74,198,0.25)] hover:bg-primary-container transition-all active:scale-[0.98]" data-path="custom-pcb" href="#"><span class="material-symbols-outlined text-[18px]">precision_manufacturing</span><span>Order PCB</span></a></div></div></header><main class="w-full pt-[96px] bg-surface min-h-[calc(100vh-96px)]"><div class="flex flex-col w-full">
+<!-- Interactive Progress Stepper Canvas -->
+<div class="w-full bg-surface-container-lowest shadow-sm py-space-lg px-margin mb-space-xl">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-semibold">Step 01 of 04</span>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">Intent &amp; Substrate Selection</div>
+</div>
+<!-- Stepper Nodes -->
+<div class="flex items-center gap-space-sm w-full md:w-auto overflow-x-auto pb-2 md:pb-0">
+<!-- Node 1: Active -->
+<div class="flex items-center gap-space-xs">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-md text-label-md font-semibold shadow-md">
+            1
+          </div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-semibold text-primary">User &amp; Purpose</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Active Setup</span>
+</div>
+</div>
+<div class="w-10 h-0.5 bg-surface-container-high mx-1 hidden sm:block"></div>
+<!-- Node 2: Upcoming -->
+<div class="flex items-center gap-space-xs opacity-60">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-label-md text-label-md font-medium">
+            2
+          </div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-medium text-on-surface">Architecture</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Layer Stackup</span>
+</div>
+</div>
+<div class="w-10 h-0.5 bg-surface-container-high mx-1 hidden sm:block"></div>
+<!-- Node 3: Specifications -->
+<div class="flex items-center gap-space-xs opacity-60">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-label-md text-label-md font-medium">
+            3
+          </div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-medium text-on-surface">Specifications</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">Trace &amp; Tolerances</span>
+</div>
+</div>
+<div class="w-10 h-0.5 bg-surface-container-high mx-1 hidden sm:block"></div>
+<!-- Node 4: Verification -->
+<div class="flex items-center gap-space-xs opacity-60">
+<div class="w-8 h-8 rounded-full bg-surface-container-high text-on-surface flex items-center justify-center font-label-md text-label-md font-medium">
+            4
+          </div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-medium text-on-surface">Verification</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant">DFM / DRC Check</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full max-w-[1440px] mx-auto px-margin space-y-space-xl">
+<!-- Header Block with Geometric Visual Element -->
+<div class="relative bg-surface-container-lowest rounded-xl p-space-lg lg:p-space-xl shadow-sm overflow-hidden">
+<!-- Decorative PCB Traces SVG -->
+<div class="absolute right-0 top-0 bottom-0 w-1/3 opacity-10 pointer-events-none hidden md:block">
+<svg class="w-full h-full text-primary" fill="none" viewbox="0 0 400 200">
+<path d="M20 20 H 120 L 160 60 H 300 L 340 100 H 390" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<circle cx="20" cy="20" fill="currentColor" r="4"></circle>
+<circle cx="390" cy="100" fill="currentColor" r="4"></circle>
+<path d="M50 80 H 140 L 180 120 H 260 L 290 150 H 380" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+<circle cx="50" cy="80" fill="currentColor" r="4"></circle>
+<circle cx="380" cy="150" fill="currentColor" r="4"></circle>
+<path d="M10 160 H 90 L 130 120 H 170" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+<circle cx="10" cy="160" fill="currentColor" r="4"></circle>
+</svg>
+</div>
+<div class="relative z-10 max-w-2xl">
+<div class="inline-flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded-full text-primary font-label-sm text-label-sm font-semibold mb-space-sm">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+          SPECIFICATION ADAPTIVE ENGINE
+        </div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight mb-space-xs">
+          What type of PCB are you looking for?
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Help us tailor technical recommendations, impedance presets, and project templates for your workflow.
+        </p>
+</div>
+</div>
+<!-- SECTION 1: User Category & Intent -->
+<div class="space-y-space-lg">
+<div class="flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-primary font-semibold tracking-wider uppercase">Section 01</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Target Application &amp; Maker Demographics</h2>
+</div>
+<div class="hidden sm:flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">security</span>
+<span>Zero-Ad Tracking Policy</span>
+</div>
+</div>
+<!-- Info Banner -->
+<div class="flex items-start gap-space-md p-space-md rounded-lg bg-surface-container-low text-on-surface">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5 shrink-0">info</span>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+<span class="font-semibold text-on-surface">Maker Community Context:</span> Demographics are strictly for optional UX personalization and maker community benchmarks. They do <span class="font-semibold text-on-surface">NOT</span> affect board pricing, testing rigor, or technical specifications.
+        </div>
+</div>
+<!-- Demographic Micro Selectors: Split Row -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-md">
+<!-- Gender Selection Segmented Controls -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Personalization (Optional)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Profile Preset</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs" id="gender-group">
+<button class="gender-btn py-2 px-space-xs rounded-lg text-center font-label-md text-label-md font-medium transition-all bg-surface-container-low text-on-surface hover:bg-surface-container" onclick="selectOption(this, 'gender-group')" type="button">
+              Male
+            </button>
+<button class="gender-btn py-2 px-space-xs rounded-lg text-center font-label-md text-label-md font-medium transition-all bg-surface-container-low text-on-surface hover:bg-surface-container" onclick="selectOption(this, 'gender-group')" type="button">
+              Female
+            </button>
+<button class="gender-btn py-2 px-space-xs rounded-lg text-center font-label-md text-label-md font-medium transition-all bg-surface-container-low text-on-surface hover:bg-surface-container" onclick="selectOption(this, 'gender-group')" type="button">
+              Other
+            </button>
+<button class="gender-btn py-2 px-space-xs rounded-lg text-center font-label-md text-label-md font-medium transition-all bg-primary text-on-primary shadow-sm font-semibold" onclick="selectOption(this, 'gender-group')" type="button">
+              Prefer not to say
+            </button>
+</div>
+</div>
+<!-- Age Group Selection Segmented Controls -->
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm space-y-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Experience &amp; Age Group</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cohort Analysis</span>
+</div>
+<div class="grid grid-cols-3 sm:grid-cols-6 gap-space-xs" id="age-group">
+<button class="age-btn py-2 px-space-xs rounded-lg text-center font-label-md text-label-md font-medium transition-all bg-surface-container-low text-on-surface hover:bg-surface-container" onclick="selectOption(this, 'age-group')" type="button">
+              &lt; 13
+            </button>
+<button class="age-btn py-2 px-space-xs rounded-lg text-center font-label-md text-label-md font-medium transition-all bg-surface-container-low text-on-surface hover:bg-surface-container" onclick="selectOption(this, 'age-group')" type="button">
+              13–17
+            </button>
+<button class="age-btn py-2 px-space-xs rounded-lg text-center font-label-md text-label-md font-medium transition-all bg-primary text-on-primary shadow-sm font-semibold" onclick="selectOption(this, 'age-group')" type="button">
+              18–24
+            </button>
+<button class="age-btn py-2 px-space-xs rounded-lg text-center font-label-md text-label-md font-medium transition-all bg-surface-container-low text-on-surface hover:bg-surface-container" onclick="selectOption(this, 'age-group')" type="button">
+              25–34
+            </button>
+<button class="age-btn py-2 px-space-xs rounded-lg text-center font-label-md text-label-md font-medium transition-all bg-surface-container-low text-on-surface hover:bg-surface-container" onclick="selectOption(this, 'age-group')" type="button">
+              35–44
+            </button>
+<button class="age-btn py-2 px-space-xs rounded-lg text-center font-label-md text-label-md font-medium transition-all bg-surface-container-low text-on-surface hover:bg-surface-container" onclick="selectOption(this, 'age-group')" type="button">
+              45+
+            </button>
+</div>
+</div>
+</div>
+<!-- Purpose / Project Stage Cards -->
+<div class="space-y-space-sm">
+<span class="font-headline-sm text-headline-sm font-semibold text-on-surface">Select Your Project Stage &amp; Scope</span>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-space-sm" id="purpose-grid">
+<!-- Card 1: School Project -->
+<div class="purpose-card cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-lg shadow-sm transition-all flex flex-col justify-between" onclick="selectPurpose(this, 'School Project')">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">school</span>
+</div>
+<span class="font-headline-sm text-sm font-semibold text-on-surface block leading-tight mb-1">School Project</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant line-clamp-2">Science fairs, STEM, basic analog/digital kits.</p>
+</div>
+<div class="mt-space-sm pt-space-xs">
+<span class="font-label-sm text-[10px] uppercase font-semibold text-tertiary">STEM Verified</span>
+</div>
+</div>
+<!-- Card 2: College / University (Active by default) -->
+<div class="purpose-card cursor-pointer bg-primary-fixed text-on-primary-fixed p-space-md rounded-lg shadow-sm transition-all flex flex-col justify-between" onclick="selectPurpose(this, 'College/University Project')">
+<div>
+<div class="w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">account_balance</span>
+</div>
+<span class="font-headline-sm text-sm font-bold text-on-surface block leading-tight mb-1">College / Univ.</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant line-clamp-2">Capstone, IEEE papers, robotics competitions.</p>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between">
+<span class="font-label-sm text-[10px] uppercase font-bold text-primary">Student Subsidy</span>
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+</div>
+</div>
+<!-- Card 3: DIY / Hobby -->
+<div class="purpose-card cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-lg shadow-sm transition-all flex flex-col justify-between" onclick="selectPurpose(this, 'DIY / Hobby')">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">build</span>
+</div>
+<span class="font-headline-sm text-sm font-semibold text-on-surface block leading-tight mb-1">DIY / Hobby</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant line-clamp-2">IoT nodes, mechanical keyboards, retro gaming mods.</p>
+</div>
+<div class="mt-space-sm pt-space-xs">
+<span class="font-label-sm text-[10px] uppercase font-semibold text-secondary">Maker Matrix</span>
+</div>
+</div>
+<!-- Card 4: Startup -->
+<div class="purpose-card cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-lg shadow-sm transition-all flex flex-col justify-between" onclick="selectPurpose(this, 'Startup')">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">rocket_launch</span>
+</div>
+<span class="font-headline-sm text-sm font-semibold text-on-surface block leading-tight mb-1">Startup MVP</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant line-clamp-2">Rapid iteration, investor demos, pilot production.</p>
+</div>
+<div class="mt-space-sm pt-space-xs">
+<span class="font-label-sm text-[10px] uppercase font-semibold text-tertiary">Express 24H</span>
+</div>
+</div>
+<!-- Card 5: Professional / Industrial -->
+<div class="purpose-card cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-lg shadow-sm transition-all flex flex-col justify-between" onclick="selectPurpose(this, 'Professional / Industrial')">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">factory</span>
+</div>
+<span class="font-headline-sm text-sm font-semibold text-on-surface block leading-tight mb-1">Industrial</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant line-clamp-2">Industrial PLCs, automotive grade, ruggedized sensors.</p>
+</div>
+<div class="mt-space-sm pt-space-xs">
+<span class="font-label-sm text-[10px] uppercase font-semibold text-on-surface-variant">IPC Class 3</span>
+</div>
+</div>
+<!-- Card 6: Research & Lab -->
+<div class="purpose-card cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-lg shadow-sm transition-all flex flex-col justify-between" onclick="selectPurpose(this, 'Research &amp; Lab')">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">science</span>
+</div>
+<span class="font-headline-sm text-sm font-semibold text-on-surface block leading-tight mb-1">Research &amp; Lab</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant line-clamp-2">High-frequency RF, cryogenic &amp; quantum test setups.</p>
+</div>
+<div class="mt-space-sm pt-space-xs">
+<span class="font-label-sm text-[10px] uppercase font-semibold text-primary">Sub-mil Spec</span>
+</div>
+</div>
+<!-- Card 7: Other Custom -->
+<div class="purpose-card cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-lg shadow-sm transition-all flex flex-col justify-between" onclick="selectPurpose(this, 'Other Custom Applications')">
+<div>
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-sm">
+<span class="material-symbols-outlined text-[20px]">settings_suggest</span>
+</div>
+<span class="font-headline-sm text-sm font-semibold text-on-surface block leading-tight mb-1">Other Custom</span>
+<p class="font-body-sm text-[12px] text-on-surface-variant line-clamp-2">Artistic copper art, wearables, custom substrate mix.</p>
+</div>
+<div class="mt-space-sm pt-space-xs">
+<span class="font-label-sm text-[10px] uppercase font-semibold text-on-surface-variant">Consultation</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 2: PCB Type Selection Grid -->
+<div class="space-y-space-lg pb-space-xl">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-primary font-semibold tracking-wider uppercase">Section 02</span>
+<h2 class="font-headline-md text-headline-md font-bold text-on-surface">Architectural PCB Substrate Type</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Select standard substrate topology for instant production tooling.</p>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-secondary">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>RoHS 2.0 &amp; Lead-Free Certified Fab</span>
+</div>
+</div>
+<!-- 10 Visual Technical Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-space-md" id="pcb-type-grid">
+<!-- CARD 1: Single-Sided PCB -->
+<div class="pcb-card cursor-pointer rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" onclick="selectPCB(this, 'Single-Sided PCB', '₹199')">
+<div class="space-y-space-sm">
+<div class="w-full h-32 rounded-lg bg-surface-container-low p-space-sm flex items-center justify-center relative overflow-hidden">
+<svg class="w-36 h-20 text-on-surface-variant group-hover:text-primary transition-colors" fill="none" viewbox="0 0 160 90">
+<!-- Substrate FR-4 -->
+<rect fill="#cbd5e1" height="24" opacity="0.4" rx="3" width="130" x="15" y="45"></rect>
+<text class="font-label-sm text-[8px]" fill="currentColor" x="20" y="60">FR-4 (1.6mm)</text>
+<!-- Single Copper Trace Layer on Top -->
+<rect fill="#006c4a" height="7" rx="1.5" width="110" x="25" y="38"></rect>
+<circle cx="45" cy="41.5" fill="#dbe1ff" r="2.5"></circle>
+<circle cx="115" cy="41.5" fill="#dbe1ff" r="2.5"></circle>
+<path d="M45 41.5 H 115" stroke="#85f8c4" stroke-width="1.5"></path>
+</svg>
+<span class="absolute top-2 left-2 font-label-sm text-[10px] bg-surface-container text-on-surface-variant px-1.5 py-0.5 rounded font-mono">1-LAYER</span>
+</div>
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Single-Sided</h3>
+<span class="font-label-sm text-label-sm font-bold text-secondary">₹199</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Simple analog power &amp; LED indicator boards, FR-4 1.6mm standard core.</p>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-[11px] text-on-surface-variant">
+<span>Material</span>
+<span class="font-mono text-on-surface">FR-4 Standard</span>
+</div>
+<div class="flex justify-between font-label-sm text-[11px] text-on-surface-variant">
+<span>Copper Weight</span>
+<span class="font-mono text-on-surface">1.0 oz (35µm)</span>
+</div>
+</div>
+</div>
+<button class="select-btn mt-space-md w-full py-1.5 px-space-sm rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold group-hover:bg-primary-container group-hover:text-on-primary-container transition-all" type="button">
+            Select
+          </button>
+</div>
+<!-- CARD 2: Double-Sided PCB (Active / Pre-selected) -->
+<div class="pcb-card cursor-pointer rounded-xl bg-primary-fixed/30 p-space-md shadow-md transition-all flex flex-col justify-between group" onclick="selectPCB(this, 'Double-Sided PCB', '₹299')">
+<div class="space-y-space-sm">
+<div class="w-full h-32 rounded-lg bg-surface-container p-space-sm flex items-center justify-center relative overflow-hidden">
+<svg class="w-36 h-20 text-primary" fill="none" viewbox="0 0 160 90">
+<!-- Substrate -->
+<rect fill="#d2d9f4" height="26" opacity="0.6" rx="2" width="130" x="15" y="32"></rect>
+<!-- Top & Bottom Copper Traces -->
+<rect fill="#004ac6" height="6" rx="1.5" width="110" x="25" y="26"></rect>
+<rect fill="#004ac6" height="6" rx="1.5" width="110" x="25" y="58"></rect>
+<!-- PTH Via barrels -->
+<rect fill="#85f8c4" height="38" rx="1" width="8" x="45" y="26"></rect>
+<rect fill="#85f8c4" height="38" rx="1" width="8" x="105" y="26"></rect>
+<circle cx="49" cy="45" fill="#131b2e" r="1.5"></circle>
+<circle cx="109" cy="45" fill="#131b2e" r="1.5"></circle>
+</svg>
+<div class="absolute top-2 left-2 flex items-center gap-1">
+<span class="font-label-sm text-[10px] bg-primary text-on-primary px-1.5 py-0.5 rounded font-mono font-bold">2-LAYER</span>
+<span class="font-label-sm text-[9px] bg-secondary-fixed text-on-secondary-fixed px-1.5 py-0.5 rounded font-bold">POPULAR</span>
+</div>
+</div>
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm font-bold text-primary">Double-Sided</h3>
+<span class="font-label-sm text-label-sm font-bold text-primary">₹299</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Most popular prototype standard, plated through-hole (PTH) vias, HASL/ENIG finish.</p>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-[11px] text-on-surface-variant">
+<span>Vias / PTH</span>
+<span class="font-mono text-on-surface">Plated &amp; Tented</span>
+</div>
+<div class="flex justify-between font-label-sm text-[11px] text-on-surface-variant">
+<span>Min Track/Space</span>
+<span class="font-mono text-on-surface">4 / 4 mil</span>
+</div>
+</div>
+</div>
+<button class="select-btn mt-space-md w-full py-1.5 px-space-sm rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold shadow-sm transition-all flex items-center justify-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">check</span> Selected
+          </button>
+</div>
+<!-- CARD 3: Multilayer PCB -->
+<div class="pcb-card cursor-pointer rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" onclick="selectPCB(this, 'Multilayer PCB', '₹799')">
+<div class="space-y-space-sm">
+<div class="w-full h-32 rounded-lg bg-surface-container-low p-space-sm flex items-center justify-center relative overflow-hidden">
+<svg class="w-36 h-20 text-on-surface-variant group-hover:text-primary transition-colors" fill="none" viewbox="0 0 160 90">
+<rect fill="#cbd5e1" height="50" opacity="0.3" rx="3" width="130" x="15" y="20"></rect>
+<!-- Multiple conductive inner traces -->
+<line stroke="#004ac6" stroke-width="3" x1="25" x2="135" y1="23" y2="23"></line>
+<line stroke="#006c4a" stroke-dasharray="8 3" stroke-width="2.5" x1="25" x2="135" y1="38" y2="38"></line>
+<line stroke="#006c4a" stroke-dasharray="12 4" stroke-width="2.5" x1="25" x2="135" y1="52" y2="52"></line>
+<line stroke="#004ac6" stroke-width="3" x1="25" x2="135" y1="67" y2="67"></line>
+<!-- Buried / Blind via mock -->
+<rect fill="#68dba9" height="44" width="7" x="75" y="23"></rect>
+</svg>
+<span class="absolute top-2 left-2 font-label-sm text-[10px] bg-surface-container text-on-surface-variant px-1.5 py-0.5 rounded font-mono">4–32 LAYERS</span>
+</div>
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Multilayer PCB</h3>
+<span class="font-label-sm text-label-sm font-bold text-secondary">₹799</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">For high-speed microcontrollers, FPGA, and DDR signal routing with ground planes.</p>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-[11px] text-on-surface-variant">
+<span>Impedance Control</span>
+<span class="font-mono text-on-surface">±5% Toleranced</span>
+</div>
+<div class="flex justify-between font-label-sm text-[11px] text-on-surface-variant">
+<span>Core Type</span>
+<span class="font-mono text-on-surface">TG150 / TG170</span>
+</div>
+</div>
+</div>
+<button class="select-btn mt-space-md w-full py-1.5 px-space-sm rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold group-hover:bg-primary-container group-hover:text-on-primary-container transition-all" type="button">
+            Select
+          </button>
+</div>
+<!-- CARD 4: Flexible PCB -->
+<div class="pcb-card cursor-pointer rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" onclick="selectPCB(this, 'Flexible PCB', '₹999')">
+<div class="space-y-space-sm">
+<div class="w-full h-32 rounded-lg bg-surface-container-low p-space-sm flex items-center justify-center relative overflow-hidden">
+<svg class="w-36 h-20 text-on-surface-variant group-hover:text-primary transition-colors" fill="none" viewbox="0 0 160 90">
+<!-- Flex Polyimide curved Ribbon -->
+<path d="M 20 65 Q 50 15 80 50 T 140 30" fill="none" stroke="#d97706" stroke-linecap="round" stroke-width="8"></path>
+<path d="M 20 65 Q 50 15 80 50 T 140 30" fill="none" stroke="#b45309" stroke-dasharray="4 2" stroke-width="2"></path>
+<circle cx="20" cy="65" fill="#fbbf24" r="4"></circle>
+<circle cx="140" cy="30" fill="#fbbf24" r="4"></circle>
+</svg>
+<span class="absolute top-2 left-2 font-label-sm text-[10px] bg-surface-container text-on-surface-variant px-1.5 py-0.5 rounded font-mono">POLYIMIDE</span>
+</div>
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Flexible PCB</h3>
+<span class="font-label-sm text-label-sm font-bold text-secondary">₹999</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Polyimide ultra-thin flex for wearable tech, gimbal links, and medical implants.</p>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-[11px] text-on-surface-variant">
+<span>Thickness</span>
+<span class="font-mono text-on-surface">0.07–0.11 mm</span>
+</div>
+<div class="flex justify-between font-label-sm text-[11px] text-on-surface-variant">
+<span>Bend Cycles</span>
+<span class="font-mono text-on-surface">&gt; 100,000</span>
+</div>
+</div>
+</div>
+<button class="select-btn mt-space-md w-full py-1.5 px-space-sm rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold group-hover:bg-primary-container group-hover:text-on-primary-container transition-all" type="button">
+            Select
+          </button>
+</div>
+<!-- CARD 5: Rigid-Flex PCB -->
+<div class="pcb-card cursor-pointer rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" onclick="selectPCB(this, 'Rigid-Flex PCB', '₹1,499')">
+<div class="space-y-space-sm">
+<div class="w-full h-32 rounded-lg bg-surface-container-low p-space-sm flex items-center justify-center relative overflow-hidden">
+<svg class="w-36 h-20 text-on-surface-variant group-hover:text-primary transition-colors" fill="none" viewbox="0 0 160 90">
+<!-- Left Rigid Block -->
+<rect fill="#006c4a" height="30" opacity="0.6" rx="2" width="38" x="15" y="30"></rect>
+<!-- Flexible Center Bridge -->
+<path d="M 53 45 Q 80 20 107 45" fill="none" stroke="#d97706" stroke-width="5"></path>
+<!-- Right Rigid Block -->
+<rect fill="#006c4a" height="30" opacity="0.6" rx="2" width="38" x="107" y="30"></rect>
+</svg>
+<span class="absolute top-2 left-2 font-label-sm text-[10px] bg-surface-container text-on-surface-variant px-1.5 py-0.5 rounded font-mono">HYBRID STACK</span>
+</div>
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Rigid-Flex</h3>
+<span class="font-label-sm text-label-sm font-bold text-secondary">₹1,499</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Combines rigid circuit boards and flexible polyimide ribbons in one unitary board.</p>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-[11px] text-on-surface-variant">
+<span>Transitions</span>
+<span class="font-mono text-on-surface">Prepreg Bond</span>
+</div>
+<div class="flex justify-between font-label-sm text-[11px] text-on-surface-variant">
+<span>Weight Relief</span>
+<span class="font-mono text-on-surface">Up to -60%</span>
+</div>
+</div>
+</div>
+<button class="select-btn mt-space-md w-full py-1.5 px-space-sm rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold group-hover:bg-primary-container group-hover:text-on-primary-container transition-all" type="button">
+            Select
+          </button>
+</div>
+<!-- CARD 6: LED / Metal Core PCB -->
+<div class="pcb-card cursor-pointer rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" onclick="selectPCB(this, 'Metal Core PCB', '₹499')">
+<div class="space-y-space-sm">
+<div class="w-full h-32 rounded-lg bg-surface-container-low p-space-sm flex items-center justify-center relative overflow-hidden">
+<svg class="w-36 h-20 text-on-surface-variant group-hover:text-primary transition-colors" fill="none" viewbox="0 0 160 90">
+<!-- Aluminum Base plate -->
+<rect fill="#94a3b8" height="20" rx="2" width="130" x="15" y="48"></rect>
+<text class="font-label-sm text-[8px]" fill="#ffffff" x="25" y="62">ALUMINUM CORE</text>
+<!-- Dielectric film -->
+<rect fill="#38bdf8" height="4" width="130" x="15" y="42"></rect>
+<!-- Copper LED pads -->
+<circle cx="45" cy="34" fill="#f59e0b" r="6"></circle>
+<circle cx="80" cy="34" fill="#f59e0b" r="6"></circle>
+<circle cx="115" cy="34" fill="#f59e0b" r="6"></circle>
+</svg>
+<span class="absolute top-2 left-2 font-label-sm text-[10px] bg-surface-container text-on-surface-variant px-1.5 py-0.5 rounded font-mono">MCPCB</span>
+</div>
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Metal Core PCB</h3>
+<span class="font-label-sm text-label-sm font-bold text-secondary">₹499</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Aluminum substrate for ultra-high-power thermal dissipation &amp; LED spotlights.</p>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-[11px] text-on-surface-variant">
+<span>Thermal Cond.</span>
+<span class="font-mono text-on-surface">2.0W - 3.0W/m.K</span>
+</div>
+<div class="flex justify-between font-label-sm text-[11px] text-on-surface-variant">
+<span>Base Alloy</span>
+<span class="font-mono text-on-surface">Al 5052 / 6061</span>
+</div>
+</div>
+</div>
+<button class="select-btn mt-space-md w-full py-1.5 px-space-sm rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold group-hover:bg-primary-container group-hover:text-on-primary-container transition-all" type="button">
+            Select
+          </button>
+</div>
+<!-- CARD 7: Arduino / Dev Board Shields -->
+<div class="pcb-card cursor-pointer rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" onclick="selectPCB(this, 'Dev Board Shields', '₹349')">
+<div class="space-y-space-sm">
+<div class="w-full h-32 rounded-lg bg-surface-container-low p-space-sm flex items-center justify-center relative overflow-hidden">
+<svg class="w-36 h-20 text-on-surface-variant group-hover:text-primary transition-colors" fill="none" viewbox="0 0 160 90">
+<rect fill="#006c4a" height="60" opacity="0.7" rx="4" width="110" x="25" y="15"></rect>
+<!-- Pin Headers Top & Bottom -->
+<rect fill="#1e293b" height="4" width="50" x="35" y="18"></rect>
+<rect fill="#1e293b" height="4" width="70" x="35" y="68"></rect>
+<!-- MCU placeholder -->
+<rect fill="#0f172a" height="26" rx="2" width="26" x="80" y="32"></rect>
+<circle cx="85" cy="37" fill="#cbd5e1" r="1"></circle>
+</svg>
+<span class="absolute top-2 left-2 font-label-sm text-[10px] bg-surface-container text-on-surface-variant px-1.5 py-0.5 rounded font-mono">ESP32 / RP2040</span>
+</div>
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Dev Shields</h3>
+<span class="font-label-sm text-label-sm font-bold text-secondary">₹349</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Standard headers, Arduino, Raspberry Pi, and ESP32 expansion pinouts.</p>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-[11px] text-on-surface-variant">
+<span>Header Pitch</span>
+<span class="font-mono text-on-surface">2.54mm (0.1")</span>
+</div>
+<div class="flex justify-between font-label-sm text-[11px] text-on-surface-variant">
+<span>Silkscreen</span>
+<span class="font-mono text-on-surface">HD High-Contrast</span>
+</div>
+</div>
+</div>
+<button class="select-btn mt-space-md w-full py-1.5 px-space-sm rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold group-hover:bg-primary-container group-hover:text-on-primary-container transition-all" type="button">
+            Select
+          </button>
+</div>
+<!-- CARD 8: Power Supply PCB -->
+<div class="pcb-card cursor-pointer rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" onclick="selectPCB(this, 'Power Supply PCB', '₹599')">
+<div class="space-y-space-sm">
+<div class="w-full h-32 rounded-lg bg-surface-container-low p-space-sm flex items-center justify-center relative overflow-hidden">
+<svg class="w-36 h-20 text-on-surface-variant group-hover:text-primary transition-colors" fill="none" viewbox="0 0 160 90">
+<rect fill="#131b2e" height="60" rx="3" width="130" x="15" y="15"></rect>
+<!-- Heavy Copper High Voltage Cleared Traces -->
+<path d="M 25 35 H 70 V 60 H 135" stroke="#004ac6" stroke-linecap="square" stroke-width="8"></path>
+<path d="M 25 60 H 50 V 35 H 90" stroke="#f59e0b" stroke-width="4"></path>
+<circle cx="120" cy="35" fill="#e2e8f0" r="8" stroke="#004ac6" stroke-width="2"></circle>
+</svg>
+<span class="absolute top-2 left-2 font-label-sm text-[10px] bg-surface-container text-on-surface-variant px-1.5 py-0.5 rounded font-mono">2OZ - 3OZ COPPER</span>
+</div>
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Power Supply</h3>
+<span class="font-label-sm text-label-sm font-bold text-secondary">₹599</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Heavy copper 2oz/3oz, wide track spacing, high-voltage isolation clearances.</p>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-[11px] text-on-surface-variant">
+<span>Creepage / Gap</span>
+<span class="font-mono text-on-surface">IEC 60950 Spec</span>
+</div>
+<div class="flex justify-between font-label-sm text-[11px] text-on-surface-variant">
+<span>Max Current</span>
+<span class="font-mono text-on-surface">Up to 30 Amps</span>
+</div>
+</div>
+</div>
+<button class="select-btn mt-space-md w-full py-1.5 px-space-sm rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold group-hover:bg-primary-container group-hover:text-on-primary-container transition-all" type="button">
+            Select
+          </button>
+</div>
+<!-- CARD 9: Sensor PCB -->
+<div class="pcb-card cursor-pointer rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" onclick="selectPCB(this, 'Sensor PCB', '₹449')">
+<div class="space-y-space-sm">
+<div class="w-full h-32 rounded-lg bg-surface-container-low p-space-sm flex items-center justify-center relative overflow-hidden">
+<svg class="w-36 h-20 text-on-surface-variant group-hover:text-primary transition-colors" fill="none" viewbox="0 0 160 90">
+<!-- Circular Micro-disc layout -->
+<circle cx="80" cy="45" fill="#006c4a" opacity="0.7" r="32"></circle>
+<circle cx="80" cy="45" fill="#004ac6" opacity="0.3" r="22"></circle>
+<circle cx="80" cy="45" fill="#f8fafc" r="10"></circle>
+<circle cx="80" cy="45" fill="#006c4a" r="3"></circle>
+<circle cx="65" cy="35" fill="#f59e0b" r="2"></circle>
+<circle cx="95" cy="55" fill="#f59e0b" r="2"></circle>
+</svg>
+<span class="absolute top-2 left-2 font-label-sm text-[10px] bg-surface-container text-on-surface-variant px-1.5 py-0.5 rounded font-mono">ULTRA-COMPACT</span>
+</div>
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Sensor PCB</h3>
+<span class="font-label-sm text-label-sm font-bold text-secondary">₹449</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Ultra-compact form factors with low-noise analog ground plane partitioning.</p>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-[11px] text-on-surface-variant">
+<span>Noise Shielding</span>
+<span class="font-mono text-on-surface">Faraday Ring</span>
+</div>
+<div class="flex justify-between font-label-sm text-[11px] text-on-surface-variant">
+<span>SMD Accuracy</span>
+<span class="font-mono text-on-surface">0201 Capable</span>
+</div>
+</div>
+</div>
+<button class="select-btn mt-space-md w-full py-1.5 px-space-sm rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold group-hover:bg-primary-container group-hover:text-on-primary-container transition-all" type="button">
+            Select
+          </button>
+</div>
+<!-- CARD 10: Custom Specification PCB -->
+<div class="pcb-card cursor-pointer rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" onclick="selectPCB(this, 'Custom Specification PCB', '₹899')">
+<div class="space-y-space-sm">
+<div class="w-full h-32 rounded-lg bg-surface-container-low p-space-sm flex items-center justify-center relative overflow-hidden">
+<svg class="w-36 h-20 text-on-surface-variant group-hover:text-primary transition-colors" fill="none" viewbox="0 0 160 90">
+<!-- Polygon Irregular outline -->
+<polygon fill="#2563eb" opacity="0.3" points="30,20 125,20 145,50 115,75 40,75 20,50"></polygon>
+<!-- Castellated holes edge -->
+<circle cx="30" cy="20" fill="#cbd5e1" r="3"></circle>
+<circle cx="50" cy="20" fill="#cbd5e1" r="3"></circle>
+<circle cx="70" cy="20" fill="#cbd5e1" r="3"></circle>
+<circle cx="90" cy="20" fill="#cbd5e1" r="3"></circle>
+<circle cx="110" cy="20" fill="#cbd5e1" r="3"></circle>
+<path d="M40 50 L80 40 L110 60" stroke="#004ac6" stroke-width="2"></path>
+</svg>
+<span class="absolute top-2 left-2 font-label-sm text-[10px] bg-surface-container text-on-surface-variant px-1.5 py-0.5 rounded font-mono">EXOTIC / ROGERS</span>
+</div>
+<div>
+<div class="flex items-center justify-between mb-1">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors">Custom Spec</h3>
+<span class="font-label-sm text-label-sm font-bold text-secondary">₹899</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Irregular CAD outlines, castellated side vias, Rogers PTFE, and blind/buried microvias.</p>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-[11px] text-on-surface-variant">
+<span>Castellation</span>
+<span class="font-mono text-on-surface">Supported</span>
+</div>
+<div class="flex justify-between font-label-sm text-[11px] text-on-surface-variant">
+<span>Custom Edge</span>
+<span class="font-mono text-on-surface">CNC Milling</span>
+</div>
+</div>
+</div>
+<button class="select-btn mt-space-md w-full py-1.5 px-space-sm rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold group-hover:bg-primary-container group-hover:text-on-primary-container transition-all" type="button">
+            Select
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- STICKY BOTTOM ACTION BAR HUD -->
+<div class="sticky bottom-0 z-40 w-full bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_-4px_20px_rgba(0,0,0,0.06)] py-space-md px-margin">
+<div class="w-full max-w-[1440px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<!-- Left Config Summary Status -->
+<div class="flex items-center gap-space-lg w-full sm:w-auto justify-between sm:justify-start">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">layers</span>
+</div>
+<div>
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider block">Currently Configured</span>
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface leading-tight" id="summary-pcb">Double-Sided PCB</span>
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-2 py-0.5 rounded font-mono font-semibold" id="summary-price">From ₹299</span>
+</div>
+</div>
+</div>
+<div class="hidden md:block h-8 w-px bg-surface-container-high"></div>
+<div class="hidden md:flex flex-col">
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider block">Project Scope</span>
+<span class="font-body-md text-body-md font-semibold text-primary" id="summary-purpose">College/University Project</span>
+</div>
+</div>
+<!-- Right Action CTA -->
+<div class="flex items-center gap-space-md w-full sm:w-auto">
+<a class="hidden sm:inline-flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface transition-colors py-2 px-space-sm" data-path="home" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Back</span>
+</a>
+<a class="w-full sm:w-auto inline-flex items-center justify-center gap-space-sm px-space-lg py-3 rounded-lg bg-primary text-on-primary font-headline-sm text-headline-sm font-bold shadow-[0_4px_16px_rgba(0,74,198,0.3)] hover:bg-primary-container transition-all active:scale-[0.98]" data-path="custom-pcb" href="#">
+<span>Continue to Custom Configuration</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Interactive Client-side Logic Script -->
+<script>
+    // Demographic Segmented Selection
+    function selectOption(btn, groupId) {
+      const container = document.getElementById(groupId);
+      const buttons = container.querySelectorAll('button');
+      buttons.forEach(b => {
+        b.className = b.className.replace('bg-primary text-on-primary font-semibold', 'bg-surface-container-low text-on-surface');
+      });
+      btn.className = btn.className.replace('bg-surface-container-low text-on-surface', 'bg-primary text-on-primary font-semibold');
+    }
+
+    // Purpose Selection
+    function selectPurpose(card, title) {
+      const cards = document.querySelectorAll('.purpose-card');
+      cards.forEach(c => {
+        c.className = 'purpose-card cursor-pointer bg-surface-container-lowest hover:bg-surface-container-low p-space-md rounded-lg shadow-sm transition-all flex flex-col justify-between';
+        const iconContainer = c.querySelector('div > div');
+        if (iconContainer) iconContainer.className = 'w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary mb-space-sm';
+        const check = c.querySelector('.material-symbols-outlined.text-primary');
+        if (check && check.innerText === 'check_circle') check.remove();
+      });
+
+      card.className = 'purpose-card cursor-pointer bg-primary-fixed text-on-primary-fixed p-space-md rounded-lg shadow-sm transition-all flex flex-col justify-between';
+      const icon = card.querySelector('div > div');
+      if (icon) icon.className = 'w-10 h-10 rounded-lg bg-primary text-on-primary flex items-center justify-center mb-space-sm';
+
+      document.getElementById('summary-purpose').innerText = title;
+    }
+
+    // PCB Type Card Selection
+    function selectPCB(card, pcbName, price) {
+      const allCards = document.querySelectorAll('.pcb-card');
+      allCards.forEach(c => {
+        c.className = 'pcb-card cursor-pointer rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group';
+        const h3 = c.querySelector('h3');
+        if (h3) h3.className = 'font-headline-sm text-headline-sm font-bold text-on-surface group-hover:text-primary transition-colors';
+        const btn = c.querySelector('.select-btn');
+        if (btn) {
+          btn.className = 'select-btn mt-space-md w-full py-1.5 px-space-sm rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold group-hover:bg-primary-container group-hover:text-on-primary-container transition-all';
+          btn.innerHTML = 'Select';
+        }
+      });
+
+      card.className = 'pcb-card cursor-pointer rounded-xl bg-primary-fixed/30 p-space-md shadow-md transition-all flex flex-col justify-between group';
+      const selectedH3 = card.querySelector('h3');
+      if (selectedH3) selectedH3.className = 'font-headline-sm text-headline-sm font-bold text-primary';
+      
+      const activeBtn = card.querySelector('.select-btn');
+      if (activeBtn) {
+        activeBtn.className = 'select-btn mt-space-md w-full py-1.5 px-space-sm rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold shadow-sm transition-all flex items-center justify-center gap-1';
+        activeBtn.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span> Selected';
+      }
+
+      document.getElementById('summary-pcb').innerText = pcbName;
+      document.getElementById('summary-price').innerText = 'From ' + price;
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface mt-space-xl"><div class="w-full max-w-[1440px] mx-auto px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-xl"><div><div class="flex items-center gap-space-sm mb-space-sm"><img alt="PCB Hub Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VUzIXGnTFtqSEYK5wppQaIhtlYjQ7DnpD6pGHg6FZej959nctxXwHWZUOQ8N4NVqr3Pcaus2rHcXbYjI2S-5JM_xTT7IoN3MolrUDI1m36-6e9gmCthEwANMaQc42cBWGBsQwh7zbsx3JOrcDNWc3KMnf5hY0h17VjA-2UxO4NKqHl8mqREMEFZ2xpW1fl-SjOzVbg_Z5_o7lPYiWMlFXBFBsvge5-i4x4C2e7oD19UjlSrzMrN_pRkAc"/><span class="font-headline-sm text-headline-sm text-primary font-bold">PCB Hub</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Industrial-grade precision fabrication and rapid hardware prototyping. Certified electronic production facility delivering sub-mil tolerance execution.</p><div class="flex flex-wrap gap-2"><span class="font-label-sm text-label-sm bg-surface-container px-2 py-1 rounded text-on-surface-variant font-medium">ISO 9001:2015</span><span class="font-label-sm text-label-sm bg-surface-container px-2 py-1 rounded text-on-surface-variant font-medium">IPC-A-600 Class 3</span><span class="font-label-sm text-label-sm bg-surface-container px-2 py-1 rounded text-on-surface-variant font-medium">ITAR Compliant</span></div></div><div><h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-space-md">Capabilities</h4><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><span class="hover:text-primary transition-colors cursor-pointer">FR-4 Standard &amp; High-TG (Up to 32 Layers)</span></li><li><span class="hover:text-primary transition-colors cursor-pointer">Rogers &amp; High Frequency Teflon</span></li><li><span class="hover:text-primary transition-colors cursor-pointer">Aluminum &amp; Metal Core PCBs</span></li><li><span class="hover:text-primary transition-colors cursor-pointer">Rigid-Flex &amp; Polyimide Flex</span></li><li><span class="hover:text-primary transition-colors cursor-pointer">HDI with Laser Staggered Microvias</span></li><li><span class="hover:text-primary transition-colors cursor-pointer">SMT Stencils &amp; Pick-and-Place Assembly</span></li></ul></div><div><h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-space-md">Tools &amp; Diagnostics</h4><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="gerber-viewer" href="#">Interactive Gerber Viewer 3D</a></li><li><a class="hover:text-primary transition-colors" data-path="dfm-check" href="#">Instant DFM Rule Checker</a></li><li><a class="hover:text-primary transition-colors" data-path="impedance-calculator" href="#">Controlled Impedance Calculator</a></li><li><a class="hover:text-primary transition-colors" data-path="stackup-planner" href="#">Multi-layer Stackup Planner</a></li><li><a class="hover:text-primary transition-colors" data-path="design-help" href="#">IPC-A-600 Guidelines &amp; Footprints</a></li><li><a class="hover:text-primary transition-colors" data-path="track-order" href="#">Live Production Lot Tracker</a></li></ul></div><div><h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-space-md">Engineering Pulse</h4><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Subscribe for fabrication tolerance updates, component shortage feeds, and technical whitepapers.</p><div class="flex items-center gap-space-xs mb-space-md"><input class="w-full px-3 py-2 bg-surface-container text-on-surface rounded-lg font-label-md text-label-md border border-outline-variant focus:outline-none focus:border-primary placeholder:text-on-surface-variant" placeholder="engineer@domain.com" type="email"/><button class="px-space-md py-2 bg-primary text-on-primary rounded-lg font-headline-sm text-headline-sm font-semibold hover:bg-primary-container transition-colors">Join</button></div><div class="flex items-center gap-3 pt-space-xs"><span class="material-symbols-outlined text-secondary text-[24px]">verified_user</span><div class="text-left"><span class="block font-label-sm text-label-sm text-on-surface font-semibold">100% RoHS &amp; UL 94V-0</span><span class="block font-body-sm text-body-sm text-on-surface-variant text-[11px]">Certified lead-free &amp; flame retardant</span></div></div></div></div><div class="w-full pt-space-md border-t border-outline-variant/40 flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><div>© 2025 PCB Hub Foundry Ltd. All rights reserved. Precision Electronic Assembly &amp; Manufacturing.</div><div class="flex items-center gap-space-md font-label-sm text-label-sm"><a class="hover:text-on-surface transition-colors" href="#">Terms of Fabrication</a><a class="hover:text-on-surface transition-colors" href="#">DRC Quality Guarantee</a><a class="hover:text-on-surface transition-colors" href="#">Security &amp; NDA</a><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a></div></div></div></footer></body></html>

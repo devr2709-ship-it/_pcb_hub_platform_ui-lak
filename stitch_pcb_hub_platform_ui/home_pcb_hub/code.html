@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-high": "#e2e7ff", "on-secondary-container": "#00714e", "on-surface": "#131b2e", "on-secondary": "#ffffff", "on-tertiary-fixed-variant": "#004c6e", "on-error": "#ffffff", "secondary-fixed": "#85f8c4", "surface-container-low": "#f2f3ff", "on-primary-container": "#eeefff", "surface-bright": "#faf8ff", "on-secondary-fixed": "#002114", "background": "#faf8ff", "on-tertiary": "#ffffff", "surface-tint": "#0053db", "surface-dim": "#d2d9f4", "surface-container-lowest": "#ffffff", "on-tertiary-fixed": "#001e2f", "outline": "#737686", "on-primary-fixed-variant": "#003ea8", "secondary": "#006c4a", "primary-container": "#2563eb", "on-tertiary-container": "#e4f2ff", "surface": "#faf8ff", "surface-container": "#eaedff", "on-primary": "#ffffff", "primary": "#004ac6", "tertiary-container": "#0074a6", "surface-container-highest": "#dae2fd", "inverse-primary": "#b4c5ff", "secondary-fixed-dim": "#68dba9", "tertiary-fixed-dim": "#89ceff", "on-background": "#131b2e", "on-error-container": "#93000a", "on-primary-fixed": "#00174b", "error": "#ba1a1a", "primary-fixed-dim": "#b4c5ff", "outline-variant": "#c3c6d7", "tertiary-fixed": "#c9e6ff", "primary-fixed": "#dbe1ff", "secondary-container": "#82f5c1", "surface-variant": "#dae2fd", "inverse-on-surface": "#eef0ff", "inverse-surface": "#283044", "tertiary": "#005a82", "on-secondary-fixed-variant": "#005137", "error-container": "#ffdad6", "on-surface-variant": "#434655" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "margin-mobile": "1rem", "space-sm": "0.5rem", "gutter-mobile": "1rem", "margin": "2rem", "gutter": "1.5rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "space-lg": "1.5rem" }, "fontFamily": { "headline-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["JetBrains Mono"], "label-lg": ["JetBrains Mono"], "headline-xl-mobile": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-xl": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-sm": ["JetBrains Mono"], "headline-sm": ["Plus Jakarta Sans"] }, "fontSize": { "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-xl-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "600" }], "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "500" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }] } } } }</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-inverse-surface text-inverse-on-surface px-margin py-1.5 flex items-center justify-between text-center"><div class="w-full flex items-center justify-center gap-space-sm"><span class="font-label-sm text-label-sm tracking-wider uppercase bg-primary-container text-on-primary-container px-2 py-0.5 rounded">SPEED RUN</span><span class="font-body-sm text-body-sm text-inverse-on-surface font-medium">⚡ Superfast 24h PCB Prototyping &amp; Gerber Instant DFM Analysis | Free Shipping across India on orders over ₹999</span></div><div class="hidden lg:flex items-center gap-space-xs font-label-sm text-label-sm text-surface-variant"><span class="material-symbols-outlined text-[14px]">verified</span><span>IPC Class 2/3</span></div></div><div class="h-16 w-full max-w-[1440px] mx-auto px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg shrink-0"><a class="flex items-center gap-space-sm group" data-path="home" href="#"><img alt="PCB Hub Vector Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VUzIXGnTFtqSEYK5wppQaIhtlYjQ7DnpD6pGHg6FZej959nctxXwHWZUOQ8N4NVqr3Pcaus2rHcXbYjI2S-5JM_xTT7IoN3MolrUDI1m36-6e9gmCthEwANMaQc42cBWGBsQwh7zbsx3JOrcDNWc3KMnf5hY0h17VjA-2UxO4NKqHl8mqREMEFZ2xpW1fl-SjOzVbg_Z5_o7lPYiWMlFXBFBsvge5-i4x4C2e7oD19UjlSrzMrN_pRkAc"/><div class="flex flex-col leading-none"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">PCB Hub</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest text-[9px]">FAB &amp; ASSEMBLY</span></div></a></div><nav class="hidden xl:flex items-center gap-space-md" data-active-classes="text-primary font-semibold border-b-2 border-primary"><a aria-current="page" class="py-2 transition-colors text-primary font-semibold border-b-2 border-primary" data-path="home" href="#">Home</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface py-2 transition-colors" data-path="explore-pcbs" href="#">Explore PCBs</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface py-2 transition-colors" data-path="custom-pcb" href="#">Custom PCB</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface py-2 transition-colors" data-path="how-it-works" href="#">How It Works</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface py-2 transition-colors" data-path="pricing" href="#">Pricing</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface py-2 transition-colors" data-path="track-order" href="#">Track Order</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface py-2 transition-colors" data-path="design-help" href="#">Design Help</a><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface py-2 transition-colors" data-path="admin-portal" href="#">Admin Portal</a></nav><div class="flex items-center gap-space-sm shrink-0"><div class="hidden md:flex items-center relative"><span class="material-symbols-outlined absolute left-2.5 text-on-surface-variant text-[18px]">search</span><input class="w-52 lg:w-64 pl-8 pr-3 py-1.5 bg-surface-container-low text-on-surface rounded-lg font-label-md text-label-md border border-outline-variant focus:outline-none focus:border-primary placeholder:text-on-surface-variant transition-all" placeholder="Search specs, FR-4, parts..." type="text"/></div><div class="hidden sm:flex items-center bg-surface-container px-2 py-1 rounded-lg gap-space-xs"><span class="font-label-sm text-label-sm font-semibold text-on-surface">₹ INR</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">unfold_more</span></div><button aria-label="View Cart" class="relative p-2 rounded-lg text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="absolute top-1 right-1 bg-secondary text-on-secondary font-label-sm text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">1</span></button><div class="flex items-center gap-space-xs pl-space-xs pr-space-sm py-1 rounded-full bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8NqsHu5yDPQOPBp_a8esTgY-mq3_z-U64wcR4WnxHcg1qVx-HHb3-wm0Wzmel1AaMSWEyIE6SJ5Y1Jq64RJ8xHDBwpw68a08rLIrM4JZ0q5k7Qfol5l48cnzMU_0glbJNCzEjRBRwkQVx87beNYqZMrcR5iEDwdPNfOAXPcy4pkM6MLXk5mLRBml4FiUDPQJL-1SPDK9z1dClSLmLRiplTT-9sUlcljyxk2mmhXXr7k8YzDRMNglZ"/><div class="hidden 2xl:flex flex-col text-left"><span class="font-body-sm text-body-sm font-semibold text-on-surface leading-tight">Arjun Sharma</span><span class="font-label-sm text-label-sm text-on-surface-variant text-[10px] leading-tight">Hardware Lead</span></div><span class="material-symbols-outlined text-on-surface-variant text-[16px]">expand_more</span></div><a class="hidden lg:inline-flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary text-on-primary font-headline-sm text-headline-sm font-semibold shadow-[0_2px_12px_rgba(0,74,198,0.25)] hover:bg-primary-container transition-all active:scale-[0.98]" data-path="custom-pcb" href="#"><span class="material-symbols-outlined text-[18px]">precision_manufacturing</span><span>Order PCB</span></a></div></div></header><main class="w-full pt-[96px] bg-surface min-h-[calc(100vh-96px)]"><div class="flex flex-col w-full">
+<!-- Top Circuit Grid Accent & Ambient Gradient Field -->
+<section class="relative w-full overflow-hidden pb-space-xl">
+<!-- Subtle technical grid decoration -->
+<div class="absolute inset-0 pointer-events-none opacity-40">
+<svg class="w-full h-full" height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="48" id="grid-pattern" patternunits="userSpaceOnUse" width="48">
+<circle cx="2" cy="2" fill="#2563eb" opacity="0.18" r="1.2"></circle>
+<path d="M 48 0 L 0 0 0 48" fill="none" opacity="0.4" stroke="#dae2fd" stroke-width="0.5"></path>
+</pattern>
+</defs>
+<rect fill="url(#grid-pattern)" height="100%" width="100%"></rect>
+</svg>
+</div>
+<!-- Soft radiant light spots -->
+<div class="absolute top-10 left-1/4 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-40 right-10 w-80 h-80 bg-secondary-fixed/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="w-full max-w-[1440px] mx-auto px-margin">
+<!-- Tag / Notice Ribbon -->
+<div class="flex items-center gap-space-sm pt-space-md mb-space-md">
+<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+          NEXT-GEN PCB FABRICATION PLATFORM
+        </span>
+<span class="hidden sm:inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">bolt</span>
+          Gerber DFM 4.2 Engine Live
+        </span>
+</div>
+<!-- Hero Grid Layout (Bento / Asymmetric Split) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Left: Copy & Actions -->
+<div class="lg:col-span-6 flex flex-col items-start pr-0 lg:pr-space-md">
+<h1 class="font-headline-xl text-headline-xl tracking-tight text-on-surface font-bold mb-space-md">
+            Build Your Circuit. <br/>
+<span class="bg-gradient-to-r from-primary via-primary-container to-tertiary-container bg-clip-text text-transparent drop-shadow-sm">
+              We Build Your PCB.
+            </span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-space-lg max-w-xl">
+            Get high-quality printed circuit boards for education, DIY projects, prototypes, startups, and professional electronics. Instant DFM check, 24-hour turnaround, and aerospace-grade precision.
+          </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-space-md w-full sm:w-auto mb-space-xl">
+<a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-3 rounded-lg bg-primary text-on-primary font-headline-sm text-headline-sm shadow-md hover:bg-primary-container transition-all active:scale-[0.98]" data-path="custom-pcb" href="#">
+<span>Create Custom PCB</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-3 rounded-lg bg-surface-container-low text-on-surface font-headline-sm text-headline-sm hover:bg-surface-container transition-colors shadow-sm" data-path="explore-pcbs" href="#">
+<span class="material-symbols-outlined text-[20px] text-primary">memory</span>
+<span>Explore PCB Boards</span>
+</a>
+</div>
+<!-- Micro Spec Pills -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span>IPC-6012 Class 3</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-primary">timelapse</span>
+<span>24H Express Turnaround</span>
+</div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-tertiary">check_circle</span>
+<span>100% AOI &amp; Flying Probe</span>
+</div>
+</div>
+</div>
+<!-- Right: Interactive CAD/PCB Showcase Card -->
+<div class="lg:col-span-6 relative mt-space-lg lg:mt-0">
+<!-- Main Showcase Wrapper -->
+<div class="relative w-full rounded-xl bg-surface-container-lowest p-space-md shadow-xl overflow-hidden">
+<!-- Header bar of CAD HUD -->
+<div class="flex items-center justify-between pb-space-sm mb-space-sm bg-surface-container-low/60 p-2.5 rounded-lg">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error/80 inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-secondary/80 inline-block"></span>
+<span class="w-3 h-3 rounded-full bg-primary/80 inline-block"></span>
+<span class="ml-2 font-label-sm text-label-sm text-on-surface-variant font-medium">VIEWPORT: TOP_LAYER_GERBER_3D.FAB</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">DRC PASS</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1:1 SCALE</span>
+</div>
+</div>
+<!-- PCB Board Visual Container with Callout Pins -->
+<div class="relative w-full h-[360px] sm:h-[420px] rounded-lg overflow-hidden bg-surface-container flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="High angle macro studio shot of an emerald green multilayer PCB motherboard with gold immersion ENIG pads, microvias, surface mount capacitors, laser cut edge connector fingers, and intricate copper traces under cool industrial studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCj_7yGuYEgx-5htGpQZ9zbSdO9GpDAJArmMV1wv9FFypO3dcALBAG4Z6UVToyO8Z3yliVPg4a7FpEzBMQvzFdDr5jYzDwrFZtJ7fvxp7PbX7iWrRp4zYClJrK3MSS8wyYrWyEDhRhvzKDsjrVIzmT2n6xlkZuKEosuv1ncIF9EQAPOJ6hHOyndttLt_po2hKtDcTX4kQV4FOYjWLFJtuoNRw4OqbHMP9xD-ZLt_2yM4o6FELUee9jJ"/>
+<!-- Dark gradient overlay for HUD contrast -->
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-inverse-surface/40 pointer-events-none"></div>
+<!-- Interactive Callout 1: Gold ENIG -->
+<div class="absolute top-12 left-8 group cursor-pointer transition-transform hover:scale-105">
+<div class="relative flex items-center gap-2 bg-surface/95 backdrop-blur-md px-3 py-1.5 rounded-lg shadow-lg">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-ping absolute -top-1 -left-1"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">ENIG Gold Finish</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">Immersion Au 2µ" / Ni 120µ"</span>
+</div>
+</div>
+</div>
+<!-- Interactive Callout 2: 0.1mm Drill -->
+<div class="absolute bottom-20 left-10 group cursor-pointer transition-transform hover:scale-105">
+<div class="flex items-center gap-2 bg-surface/95 backdrop-blur-md px-3 py-1.5 rounded-lg shadow-lg">
+<span class="material-symbols-outlined text-primary text-[16px]">radio_button_checked</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">0.1mm Laser Micro-via</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">Staggered &amp; Stacked HDI</span>
+</div>
+</div>
+</div>
+<!-- Interactive Callout 3: Solder Mask Emerald -->
+<div class="absolute top-24 right-6 group cursor-pointer transition-transform hover:scale-105">
+<div class="flex items-center gap-2 bg-surface/95 backdrop-blur-md px-3 py-1.5 rounded-lg shadow-lg">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-fixed-dim"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Dual Emerald Mask</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">High-Res Photosensitive LPI</span>
+</div>
+</div>
+</div>
+<!-- Interactive Callout 4: Controlled Impedance -->
+<div class="absolute bottom-8 right-8 group cursor-pointer transition-transform hover:scale-105">
+<div class="flex items-center gap-2 bg-surface/95 backdrop-blur-md px-3 py-1.5 rounded-lg shadow-lg">
+<span class="material-symbols-outlined text-primary-container text-[16px]">tune</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Controlled Impedance</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">±10% Tolerance / 50Ω SE</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Floating Metric Overlay Badges -->
+<div class="grid grid-cols-3 gap-2 mt-space-sm">
+<div class="bg-surface-container-low p-3 rounded-lg text-center">
+<span class="block font-headline-sm text-headline-sm font-bold text-secondary">99.8%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase text-[10px]">First-pass Yield</span>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg text-center">
+<span class="block font-headline-sm text-headline-sm font-bold text-primary">24–48h</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase text-[10px]">Rapid Dispatch</span>
+</div>
+<div class="bg-surface-container-low p-3 rounded-lg text-center">
+<span class="block font-headline-sm text-headline-sm font-bold text-on-surface">₹299</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase text-[10px]">Starting Base (5 Pcs)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Live Instant Quote Bar (Engineered Precision Widget) -->
+<div class="w-full mt-space-xl bg-surface-container-lowest rounded-xl p-space-md sm:p-space-lg shadow-lg">
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Widget Title Pill -->
+<div class="flex items-center gap-space-sm shrink-0">
+<div class="w-10 h-10 rounded-lg bg-primary-container/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">calculate</span>
+</div>
+<div>
+<span class="block font-headline-sm text-headline-sm text-on-surface font-semibold">Quick Fabrication Estimator</span>
+<span class="block font-body-sm text-body-sm text-on-surface-variant">Real-time parameters, zero delays</span>
+</div>
+</div>
+<!-- Parameter Fields -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md grow max-w-2xl">
+<!-- Dimensions -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium">DIMENSIONS (MM)</label>
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container-low text-on-surface px-3 py-2 rounded-lg font-label-md text-label-md focus:outline-none focus:bg-surface-container transition-colors" id="quote-dim" type="text" value="100 x 100"/>
+<span class="absolute right-3 font-label-sm text-label-sm text-on-surface-variant">mm</span>
+</div>
+</div>
+<!-- Layer Count -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium">LAYER COUNT</label>
+<select class="w-full bg-surface-container-low text-on-surface px-3 py-2 rounded-lg font-label-md text-label-md focus:outline-none focus:bg-surface-container transition-colors" id="quote-layers">
+<option value="1">1 Layer (Single-side)</option>
+<option selected="" value="2">2 Layers (Standard)</option>
+<option value="4">4 Layers (Multilayer)</option>
+<option value="6">6 Layers (High-density)</option>
+<option value="8">8 Layers (Advanced)</option>
+</select>
+</div>
+<!-- Quantity -->
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-medium">QUANTITY</label>
+<div class="relative flex items-center">
+<input class="w-full bg-surface-container-low text-on-surface px-3 py-2 rounded-lg font-label-md text-label-md focus:outline-none focus:bg-surface-container transition-colors" id="quote-qty" min="5" step="5" type="number" value="5"/>
+<span class="absolute right-3 font-label-sm text-label-sm text-on-surface-variant">pcs</span>
+</div>
+</div>
+</div>
+<!-- Live Price Display & CTA -->
+<div class="flex items-center justify-between sm:justify-end gap-space-md shrink-0 pt-2 lg:pt-0">
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Est. Base Total</span>
+<span class="font-headline-lg text-headline-lg text-primary font-bold" id="quote-price">₹499</span>
+</div>
+<a class="px-space-lg py-3 rounded-lg bg-primary text-on-primary font-headline-sm text-headline-sm font-semibold hover:bg-primary-container transition-all active:scale-[0.98] shadow-sm flex items-center gap-1.5" data-path="custom-pcb" href="#">
+<span>Quote Now</span>
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Categories Section -->
+<section class="w-full py-space-xl bg-surface-container-low">
+<div class="w-full max-w-[1440px] mx-auto px-margin">
+<!-- Section Heading -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-md">
+<div>
+<div class="flex items-center gap-2 text-primary font-label-sm text-label-sm uppercase tracking-wider mb-2">
+<span class="material-symbols-outlined text-[18px]">developer_board</span>
+<span>Tailored Product Lines</span>
+</div>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-bold">
+            Engineered for Every Innovation Scale
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+          From rapid collegiate prototyping to flight-qualified multilayer RF stacks, configure fabrication options suited directly to your production tier.
+        </p>
+</div>
+<!-- 6 Modern Rounded Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- 1. Student Projects -->
+<div class="group bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">school</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+                85% SUBSIDIZED
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold mb-space-xs group-hover:text-primary transition-colors">
+              Student Projects
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Affordable 2-layer boards with special university coupons, fast 48h dispatch, and hassle-free KiCad/Eagle Gerber acceptance for capstones.
+            </p>
+</div>
+<div class="pt-space-md bg-surface-container-low/50 rounded-lg p-space-sm flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">From ₹299 / 5 Pcs</span>
+<a class="text-primary hover:text-primary-container font-body-sm text-body-sm font-semibold inline-flex items-center gap-1" data-path="custom-pcb" href="#">
+              Configure <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- 2. DIY & Hobby -->
+<div class="group bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">hardware</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium">
+                MAKER READY
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold mb-space-xs group-hover:text-primary transition-colors">
+              DIY &amp; Hobby
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Breadboard-compatible grid pinouts, Arduino &amp; ESP32 custom expansion shields, mechanical keyboard backplates, and maker community kits.
+            </p>
+</div>
+<div class="pt-space-md bg-surface-container-low/50 rounded-lg p-space-sm flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Standard 1.6mm FR4</span>
+<a class="text-primary hover:text-primary-container font-body-sm text-body-sm font-semibold inline-flex items-center gap-1" data-path="custom-pcb" href="#">
+              Configure <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- 3. Engineering Projects -->
+<div class="group bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">precision_manufacturing</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-medium">
+                PCBA READY
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold mb-space-xs group-hover:text-primary transition-colors">
+              Engineering Projects
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Rigid-flex substrates, high-speed signal routing, controlled impedance validation, and automated pick-and-place surface assembly.
+            </p>
+</div>
+<div class="pt-space-md bg-surface-container-low/50 rounded-lg p-space-sm flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Turnkey Assembly</span>
+<a class="text-primary hover:text-primary-container font-body-sm text-body-sm font-semibold inline-flex items-center gap-1" data-path="custom-pcb" href="#">
+              Configure <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- 4. Startup Prototypes -->
+<div class="group bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">rocket_launch</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm font-semibold">
+                RAPID NPI
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold mb-space-xs group-hover:text-primary transition-colors">
+              Startup Prototypes
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Low-volume fast-turn pilot runs, complete DFM &amp; DFT engineering feedback, component kitting, and serialized automated optical testing.
+            </p>
+</div>
+<div class="pt-space-md bg-surface-container-low/50 rounded-lg p-space-sm flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Pilot Batches (10–500)</span>
+<a class="text-primary hover:text-primary-container font-body-sm text-body-sm font-semibold inline-flex items-center gap-1" data-path="custom-pcb" href="#">
+              Configure <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- 5. Professional Electronics -->
+<div class="group bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">layers</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-bold">
+                UP TO 32 LAYERS
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold mb-space-xs group-hover:text-primary transition-colors">
+              Professional Electronics
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Blind &amp; buried laser microvias, Rogers/PTFE high-frequency laminates, 3oz heavy copper power planes, and Class 3 military/telecom specs.
+            </p>
+</div>
+<div class="pt-space-md bg-surface-container-low/50 rounded-lg p-space-sm flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Rogers &amp; High-TG FR4</span>
+<a class="text-primary hover:text-primary-container font-body-sm text-body-sm font-semibold inline-flex items-center gap-1" data-path="custom-pcb" href="#">
+              Configure <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+<!-- 6. Custom PCB -->
+<div class="group bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[26px]">dashboard_customize</span>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+                BESPOKE GEOMETRY
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold mb-space-xs group-hover:text-primary transition-colors">
+              Custom PCB
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Circular and irregular CNC outline routing, aluminum metal core LED sinks, castellated edge holes, and matte black/purple solder masks.
+            </p>
+</div>
+<div class="pt-space-md bg-surface-container-low/50 rounded-lg p-space-sm flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface">Aluminum &amp; Heavy Cu</span>
+<a class="text-primary hover:text-primary-container font-body-sm text-body-sm font-semibold inline-flex items-center gap-1" data-path="custom-pcb" href="#">
+              Configure <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Technical Proof & Feature Grid: Why Choose PCB Hub? -->
+<section class="w-full py-space-xl bg-surface">
+<div class="w-full max-w-[1440px] mx-auto px-margin">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-label-sm text-label-sm text-primary uppercase font-semibold tracking-wider block mb-2">FABRICATION ASSURANCE</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface font-bold mb-space-sm">
+          Why Hardware Teams Choose PCB Hub
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          Built from the ground up to eradicate DFM failure modes and guarantee clean first-spin silicon turn-ons.
+        </p>
+</div>
+<!-- Feature Matrix -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- 1. High Quality PCB -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-medium">IPC CLASS 2/3</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-2">High Quality PCB</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+            Built strictly to IPC-A-600 standards. Every panel passes 100% automated optical inspection (AOI) and flying-probe netlist continuity verification.
+          </p>
+<div class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span>0.00% Netlist Short Tolerance</span>
+</div>
+</div>
+<!-- 2. Fast Manufacturing -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">speed</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-primary font-medium">24H DISPATCH</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-2">Fast Manufacturing</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+            Rapid prototyping lines handle urgent spin cycles. Standard 2-layer FR4 boards can be etched, masked, drilled, and dispatched in under 24 hours.
+          </p>
+<div class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span>Guaranteed Production Slot</span>
+</div>
+</div>
+<!-- 3. Affordable Pricing -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-10 h-10 rounded-lg bg-tertiary/10 flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[24px]">currency_rupee</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium">DIRECT FOUNDRY</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-2">Affordable Pricing</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+            Direct-to-foundry economy eliminates broker markups. Prototyping packs start from ₹299 for 5 precision panels with zero setup or tool charges.
+          </p>
+<div class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span>Transparent Live Quotation</span>
+</div>
+</div>
+<!-- 4. Custom Designs & Turnkey Reviews -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-10 h-10 rounded-lg bg-primary-container/10 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[24px]">troubleshoot</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-medium">DFM ANALYSIS</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-2">Custom Designs &amp; Footprints</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+            Instant algorithmic Gerber DFM checker highlights annular ring violations, solder bridge clearances, and unrouted air-wires before factory commitment.
+          </p>
+<div class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span>Automated Clearance Scans</span>
+</div>
+</div>
+<!-- 5. Secure Payment & GST Ready -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">account_balance</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-medium">100% SECURE</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-2">Secure Domestic Payments</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+            Seamless checkout through UPI, Razorpay, Net Banking, and corporate credit cards. Automated GST tax invoices with input credit for institutions and businesses.
+          </p>
+<div class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span>Instant GST Invoicing</span>
+</div>
+</div>
+<!-- 6. IoT Order Tracking -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between mb-space-md">
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">sensors</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high text-primary font-medium">REAL-TIME LOT</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-2">IoT Live Order Tracking</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md">
+            Track your panel batch step-by-step through our cleanroom barcode monitors: from lamination, exposure, copper bath, to courier vehicle scan.
+          </p>
+<div class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span>Live Station Timestamping</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- High-Craft Workflow Visualization: From Gerber to Silicon -->
+<section class="w-full py-space-xl bg-surface-container-low">
+<div class="w-full max-w-[1440px] mx-auto px-margin">
+<div class="flex flex-col md:flex-row items-center justify-between gap-space-md mb-space-xl">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase font-semibold tracking-wider">FABRICATION PIPELINE</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface font-bold">From Design Files to Tested Hardware in 4 Steps</h3>
+</div>
+<a class="font-headline-sm text-headline-sm text-primary hover:text-primary-container font-semibold flex items-center gap-1" data-path="how-it-works" href="#">
+<span>Read Full Spec Sheet</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<!-- Stepper Nodes Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col">
+<div class="flex items-center gap-space-sm mb-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center font-bold">01</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Gerber Upload</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Drop your RS-274X, Gerber X2, or Eagle BRD archive. Auto DFM generates 2D layer previews instantly.</p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col">
+<div class="flex items-center gap-space-sm mb-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center font-bold">02</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Spec Validation</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Configure solder mask colors, gold immersion ENIG, copper thickness (1-3oz), and edge connector chamfers.</p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col">
+<div class="flex items-center gap-space-sm mb-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary font-label-md text-label-md flex items-center justify-center font-bold">03</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Laser Precision Fab</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Automated cleanroom production featuring CNC high-speed spindle drilling, chemical copper plating, and AOI inspection.</p>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col">
+<div class="flex items-center gap-space-sm mb-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary font-label-md text-label-md flex items-center justify-center font-bold">04</div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Express Delivery</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Vacuum sealed with desiccant gel packs, bubble armored, and expedited via express air logistics across India.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Customer Testimonial & Metrics Band -->
+<section class="w-full py-space-xl bg-inverse-surface text-inverse-on-surface relative overflow-hidden">
+<!-- Ambient circuit traces background -->
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<svg class="w-full h-full" fill="none" viewbox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 200 H400 L450 250 H900 L950 200 H1440" stroke="currentColor" stroke-width="2"></path>
+<path d="M200 0 V100 L300 200 V400" stroke="currentColor" stroke-width="2"></path>
+<circle cx="450" cy="250" fill="currentColor" r="6"></circle>
+<circle cx="950" cy="200" fill="currentColor" r="6"></circle>
+</svg>
+</div>
+<div class="w-full max-w-[1440px] mx-auto px-margin relative z-10">
+<!-- 4 Numeric Metric Counters -->
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-xl pb-space-lg border-b border-surface-variant/20">
+<div>
+<span class="block font-headline-xl text-headline-xl font-bold text-secondary-fixed">150,000+</span>
+<span class="font-label-sm text-label-sm text-surface-variant uppercase tracking-wider">PCBs Shipped Across India</span>
+</div>
+<div>
+<span class="block font-headline-xl text-headline-xl font-bold text-primary-fixed">1,200+</span>
+<span class="font-label-sm text-label-sm text-surface-variant uppercase tracking-wider">Hardware Startups &amp; Labs</span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-xl text-headline-xl font-bold text-inverse-on-surface">4.9/5</span>
+<div class="flex text-amber-400">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-surface-variant uppercase tracking-wider">Engineering CSAT Rating</span>
+</div>
+<div>
+<span class="block font-headline-xl text-headline-xl font-bold text-tertiary-fixed">90+</span>
+<span class="font-label-sm text-label-sm text-surface-variant uppercase tracking-wider">Premier Campus Fab Partners</span>
+</div>
+</div>
+<!-- Testimonial Mosaic / Quotes -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter items-stretch">
+<!-- Testimonial 1 -->
+<div class="p-space-lg rounded-xl bg-inverse-surface/60 backdrop-blur-md border border-surface-variant/15 flex flex-col justify-between">
+<p class="font-body-md text-body-md text-surface-container-highest mb-space-md italic">
+            "PCB Hub turned around our 6-layer high-speed FPGA board in exactly 38 hours. Impedance matched traces were perfectly within the 10% envelope. Zero rework required."
+          </p>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary font-bold">
+              AK
+            </div>
+<div>
+<span class="block font-headline-sm text-headline-sm font-semibold text-inverse-on-surface leading-tight">Ananya Kulkarni</span>
+<span class="block font-label-sm text-label-sm text-surface-variant">Lead Hardware Architect, IIT Bombay E-Cell</span>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="p-space-lg rounded-xl bg-inverse-surface/60 backdrop-blur-md border border-surface-variant/15 flex flex-col justify-between">
+<p class="font-body-md text-body-md text-surface-container-highest mb-space-md italic">
+            "The automated instant DFM checker saved us from an annular ring breakout on our EV BMS prototype. Their customer engineering support in India is unmatched."
+          </p>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-secondary font-bold">
+              VS
+            </div>
+<div>
+<span class="block font-headline-sm text-headline-sm font-semibold text-inverse-on-surface leading-tight">Vikram Singhania</span>
+<span class="block font-label-sm text-label-sm text-surface-variant">CTO, Voltaic Mobility</span>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="p-space-lg rounded-xl bg-inverse-surface/60 backdrop-blur-md border border-surface-variant/15 flex flex-col justify-between">
+<p class="font-body-md text-body-md text-surface-container-highest mb-space-md italic">
+            "For aerospace sensors where outgassing and solder bridge margins are critical, PCB Hub delivered pristine ENIG boards with full microsection test coupons."
+          </p>
+<div class="flex items-center gap-space-sm pt-space-xs">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-tertiary font-bold">
+              RN
+            </div>
+<div>
+<span class="block font-headline-sm text-headline-sm font-semibold text-inverse-on-surface leading-tight">Rohit Nair</span>
+<span class="block font-label-sm text-label-sm text-surface-variant">Avionics Engineer, NewSpace Labs</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Partner Logos Bar -->
+<div class="mt-space-xl pt-space-lg border-t border-surface-variant/15 flex flex-wrap items-center justify-between gap-space-md">
+<span class="font-label-sm text-label-sm text-surface-variant tracking-wider uppercase">TRUSTED BY ENGINEERS ACROSS</span>
+<div class="flex flex-wrap items-center gap-space-lg opacity-80 text-surface-container-high font-headline-sm text-headline-sm font-semibold">
+<span>IIT MADRAS</span>
+<span>•</span>
+<span>BITS PILANI</span>
+<span>•</span>
+<span>ISRO TECH HUB</span>
+<span>•</span>
+<span>NIT SURATHKAL</span>
+<span>•</span>
+<span>MAKER VILLAGE</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Final Call to Action Strip -->
+<section class="w-full py-space-xl bg-surface">
+<div class="w-full max-w-[1440px] mx-auto px-margin">
+<div class="bg-gradient-to-br from-primary to-primary-container p-space-xl rounded-xl text-on-primary flex flex-col lg:flex-row items-center justify-between gap-space-lg shadow-xl">
+<div class="max-w-2xl">
+<span class="font-label-sm text-label-sm bg-on-primary/20 text-on-primary px-3 py-1 rounded-full uppercase tracking-wider font-semibold inline-block mb-space-sm">READY FOR MANUFACTURING?</span>
+<h2 class="font-headline-xl text-headline-xl font-bold mb-space-xs">Upload your Gerber files now.</h2>
+<p class="font-body-lg text-body-lg text-on-primary-container">
+            Get instant algorithmic DFM analysis and live domestic pricing in less than 30 seconds.
+          </p>
+</div>
+<div class="flex flex-wrap items-center gap-space-md shrink-0">
+<a class="px-space-xl py-3 rounded-lg bg-surface text-primary font-headline-sm text-headline-sm font-bold shadow-md hover:bg-surface-container-low transition-colors" data-path="custom-pcb" href="#">
+            Upload Gerber (ZIP)
+          </a>
+<a class="px-space-lg py-3 rounded-lg bg-on-primary/10 text-on-primary font-headline-sm text-headline-sm hover:bg-on-primary/20 transition-colors" data-path="design-help" href="#">
+            Fabrication Specs
+          </a>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Inline Client Interaction for Live Estimator
+  (function() {
+    const dimInput = document.getElementById('quote-dim');
+    const layersSelect = document.getElementById('quote-layers');
+    const qtyInput = document.getElementById('quote-qty');
+    const priceOutput = document.getElementById('quote-price');
+
+    function calculateEstimate() {
+      if (!layersSelect || !qtyInput || !priceOutput) return;
+      const layers = parseInt(layersSelect.value, 10) || 2;
+      const qty = parseInt(qtyInput.value, 10) || 5;
+
+      let baseCost = 299;
+      if (layers === 4) baseCost = 899;
+      else if (layers === 6) baseCost = 1899;
+      else if (layers === 8) baseCost = 3499;
+
+      const scaleQty = Math.max(1, qty / 5);
+      const estimatedTotal = Math.round(baseCost * (1 + (scaleQty - 1) * 0.45));
+
+      priceOutput.textContent = '₹' + estimatedTotal.toLocaleString('en-IN');
+    }
+
+    if (layersSelect) layersSelect.addEventListener('change', calculateEstimate);
+    if (qtyInput) qtyInput.addEventListener('input', calculateEstimate);
+    if (dimInput) dimInput.addEventListener('change', calculateEstimate);
+  })();
+</script></main><footer class="w-full bg-surface-container-low text-on-surface mt-space-xl"><div class="w-full max-w-[1440px] mx-auto px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter mb-space-xl"><div><div class="flex items-center gap-space-sm mb-space-sm"><img alt="PCB Hub Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VUzIXGnTFtqSEYK5wppQaIhtlYjQ7DnpD6pGHg6FZej959nctxXwHWZUOQ8N4NVqr3Pcaus2rHcXbYjI2S-5JM_xTT7IoN3MolrUDI1m36-6e9gmCthEwANMaQc42cBWGBsQwh7zbsx3JOrcDNWc3KMnf5hY0h17VjA-2UxO4NKqHl8mqREMEFZ2xpW1fl-SjOzVbg_Z5_o7lPYiWMlFXBFBsvge5-i4x4C2e7oD19UjlSrzMrN_pRkAc"/><span class="font-headline-sm text-headline-sm text-primary font-bold">PCB Hub</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Industrial-grade precision fabrication and rapid hardware prototyping. Certified electronic production facility delivering sub-mil tolerance execution.</p><div class="flex flex-wrap gap-2"><span class="font-label-sm text-label-sm bg-surface-container px-2 py-1 rounded text-on-surface-variant font-medium">ISO 9001:2015</span><span class="font-label-sm text-label-sm bg-surface-container px-2 py-1 rounded text-on-surface-variant font-medium">IPC-A-600 Class 3</span><span class="font-label-sm text-label-sm bg-surface-container px-2 py-1 rounded text-on-surface-variant font-medium">ITAR Compliant</span></div></div><div><h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-space-md">Capabilities</h4><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><span class="hover:text-primary transition-colors cursor-pointer">FR-4 Standard &amp; High-TG (Up to 32 Layers)</span></li><li><span class="hover:text-primary transition-colors cursor-pointer">Rogers &amp; High Frequency Teflon</span></li><li><span class="hover:text-primary transition-colors cursor-pointer">Aluminum &amp; Metal Core PCBs</span></li><li><span class="hover:text-primary transition-colors cursor-pointer">Rigid-Flex &amp; Polyimide Flex</span></li><li><span class="hover:text-primary transition-colors cursor-pointer">HDI with Laser Staggered Microvias</span></li><li><span class="hover:text-primary transition-colors cursor-pointer">SMT Stencils &amp; Pick-and-Place Assembly</span></li></ul></div><div><h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-space-md">Tools &amp; Diagnostics</h4><ul class="space-y-2 font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="gerber-viewer" href="#">Interactive Gerber Viewer 3D</a></li><li><a class="hover:text-primary transition-colors" data-path="dfm-check" href="#">Instant DFM Rule Checker</a></li><li><a class="hover:text-primary transition-colors" data-path="impedance-calculator" href="#">Controlled Impedance Calculator</a></li><li><a class="hover:text-primary transition-colors" data-path="stackup-planner" href="#">Multi-layer Stackup Planner</a></li><li><a class="hover:text-primary transition-colors" data-path="design-help" href="#">IPC-A-600 Guidelines &amp; Footprints</a></li><li><a class="hover:text-primary transition-colors" data-path="track-order" href="#">Live Production Lot Tracker</a></li></ul></div><div><h4 class="font-headline-sm text-headline-sm font-semibold text-on-surface mb-space-md">Engineering Pulse</h4><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Subscribe for fabrication tolerance updates, component shortage feeds, and technical whitepapers.</p><div class="flex items-center gap-space-xs mb-space-md"><input class="w-full px-3 py-2 bg-surface-container text-on-surface rounded-lg font-label-md text-label-md border border-outline-variant focus:outline-none focus:border-primary placeholder:text-on-surface-variant" placeholder="engineer@domain.com" type="email"/><button class="px-space-md py-2 bg-primary text-on-primary rounded-lg font-headline-sm text-headline-sm font-semibold hover:bg-primary-container transition-colors">Join</button></div><div class="flex items-center gap-3 pt-space-xs"><span class="material-symbols-outlined text-secondary text-[24px]">verified_user</span><div class="text-left"><span class="block font-label-sm text-label-sm text-on-surface font-semibold">100% RoHS &amp; UL 94V-0</span><span class="block font-body-sm text-body-sm text-on-surface-variant text-[11px]">Certified lead-free &amp; flame retardant</span></div></div></div></div><div class="w-full pt-space-md border-t border-outline-variant/40 flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><div>© 2025 PCB Hub Foundry Ltd. All rights reserved. Precision Electronic Assembly &amp; Manufacturing.</div><div class="flex items-center gap-space-md font-label-sm text-label-sm"><a class="hover:text-on-surface transition-colors" href="#">Terms of Fabrication</a><a class="hover:text-on-surface transition-colors" href="#">DRC Quality Guarantee</a><a class="hover:text-on-surface transition-colors" href="#">Security &amp; NDA</a><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a></div></div></div></footer></body></html>
